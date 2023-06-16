@@ -1,0 +1,38 @@
+@font-face {
+    font-family: ABeeZee;
+    src: url(../Fonts/ABeeZee.ttf);
+}
+@font-face {
+    font-family: Anaheim;
+    src: url(../Fonts/Anaheim.ttf);
+}
+@font-face {
+    font-family: Amaranth;
+    src: url(../Fonts/Amaranth.ttf);
+}
+
+:root{
+    --prim-blue: #639ED8;
+    --outline-color: #dcdcdc;
+    --standard-text-color: #545454;
+    --location-color: #9c9c9c;
+    --card-title-color: #1b1b1b;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--prim-blue);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #45729e;
+}

@@ -1,0 +1,93 @@
+div.card-container{
+    position: absolute;
+    left: calc(45px + 272px);
+    top: 202px;
+    width: calc(100% - 272px - 45px - 25px);
+    /* background: #000; */
+}
+
+div.card-container section .cards{
+    display: grid;
+    gap: 7px;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    top: 10px;
+}
+
+div.card-container section > p{
+    font-size: 32px;
+    color: var(--prim-blue);
+    font-family: "Amaranth";
+    position: relative;
+    top: -10px;
+}
+
+div.card{
+    position: relative;
+    border: 1px solid var(--outline-color);
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 350ms;
+}
+
+div.card:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 6px #22222228;
+}
+
+div.card div.img{
+    border-bottom: 1px solid var(--outline-color);
+}
+
+div.card div.img img{
+    width: 80%;
+    padding: 10px 25px;
+    height: 80%;
+    /* background: #000; */
+    object-fit: contain;
+}
+
+div.card div.data{
+    padding: 15px 18px 30px 18px;
+    font-family: "AbeeZee";
+    position: relative;
+}
+
+div.card div.data p.title{
+    font-size: 14.7px;
+    line-height: 132%;
+    color: var(--card-title-color);
+    width: 79%;
+}
+
+div.card div.data img.heart{
+    float: right;
+    position: relative;
+    top: -37px;
+    cursor: pointer;
+    width: 30px;
+}
+
+div.card div.data p.location{
+    font-size: 10.7px;
+    color: var(--standard-text-color);
+    position: relative;
+    top: 13px;
+}
+
+div.card div.data div.stars{
+    position: relative;
+    top: 23px;
+    left: 0;
+}
+
+div.card div.data div.stars img{
+    width: 13px;
+}
+
+div.card div.data p.price{
+    float: right;
+    position: relative;
+    top: 2px;
+}
